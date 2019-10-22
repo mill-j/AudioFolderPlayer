@@ -8,6 +8,7 @@
 jQuery(document).ready(function($) {
 
 var index = 0;
+var rand = false;
 var max_songs = $('#playlist').attr('value');
 var mute = false;
 var vol = .6; /* css #vol_bar width should also be set at 60% */
@@ -42,7 +43,10 @@ var next = function(){
 	//stop current song
     $('#playlist audio').get(index).pause();
 	$('#playlist audio').get(index).currentTime = 0;  
-   index++;
+    if(rand)
+		index = Math.floor(Math.random() * max_songs);
+   else
+		index++;
    if(index >= max_songs) index = 0;
    $('#playlist audio').get(index).play();
    $('#play').hide();
@@ -60,6 +64,20 @@ var prev = function(){
    $('#pause').show();
    $('#title').html($('#song'+(index+1)).attr('name'));
 };
+
+var random = function(){
+	if(rand){
+		rand = false;
+		$('#randon').hide();
+		$('#rand').show();
+	}
+	else{
+		rand = true;
+		$('#rand').hide();
+		$('#randon').show();
+	}
+}
+
 var playSong = function(n){
 	stop();
 	index = n;
@@ -80,6 +98,8 @@ $('#fbwd').click(function() {
 });
 $('#next').click(function() { next(); });
 $('#prev').click(function() { prev(); });
+$('#rand').click(function() { random(); });
+$('#randon').click(function() { random(); });
 $('#timer').click(function() { 
 	if(countdown) countdown=false;
 	else countdown=true;

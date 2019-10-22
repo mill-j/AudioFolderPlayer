@@ -14,7 +14,7 @@
 	border-radius: 2px;
 	border: 1px solid #686868;
 	box-shadow: 0 0 2px 2px #0f1012;
-	width: 250px;
+	width: 350px;
 }
 #player{
 	
@@ -22,7 +22,7 @@
 	text-align:center;
 }
 #progressbar_container{
-	width:252px;
+	width:350px;
 	height:4px;
 	border: 1px inset #686868 ;
 	cursor:pointer;
@@ -56,7 +56,7 @@
 	z-index=9;
 }
 #controls{
-	width:252px;
+	width:350px;
 	min-width: 252px;
 	height:34px;
 	padding-top:2px;
@@ -111,13 +111,19 @@
 	opacity: 0.6;
 	font-size: 14px;
 }
+
+#randon i{
+	color: #A2CCD8;
+	text-shadow: 0 0 1px #000000 ;
+}
+
 .display{
 	border: 1px inset #686868 ;
 	background: #08090b;
 	box-shadow:inset 0 0 10px #000000;
 }
 #display{
-	width:252px;
+	width:350px;
 	height: 50px;
 	margin-bottom: 8px;
 	overflow: hidden;
@@ -138,7 +144,7 @@
 }
 
 #title{
-	width:154px;
+	width:250px;
 	height:14px;
 	margin: 4px;
 	overflow: hidden;
@@ -149,7 +155,7 @@
 	/* background: rgba(255,255,255,0.6); */
 }
 #vol_container{
-	width:154px;
+	width:230px;
 	height:14px;
 	padding: 4px;
 	overflow: hidden;
@@ -158,7 +164,7 @@
 }
 #vol_bar_container{
 	float: left;
-	width:100px;
+	width:190px;
 	height:14px;
 	/* background: rgba(0,0,0,0.4); */
 	border: 1px solid #a2ccd8;

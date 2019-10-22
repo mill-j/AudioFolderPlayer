@@ -52,6 +52,8 @@
 		<div class="ctrl_btn" id="stop"><i class="fa fa-stop"></i></div>
 		<div class="ctrl_btn" id="ffwd"><i class="fa fa-forward"></i></div>
 		<div class="ctrl_btn" id="next"><i class="fa fa-fast-forward"></i></div>
+		<div class="ctrl_btn" id="rand"><i class="fa fa-random"></i></div>
+		<div class="ctrl_btn" id="randon"  style="display:none;"><i class="fa fa-random"></i></div>
 		<span class="stretch"></span>
 	</div><!-- /#controls --> 
 </div> <!-- /#player -->
@@ -78,4 +80,4 @@
 
 <script language="javascript" type="text/javascript" src="audio_player.js"></script>	 
 </body>    
-</html> 
+</html>
